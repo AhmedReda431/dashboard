@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DashBoard</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body>
+    <main>
+      <div class="main-holder">
+        <button class="btn sideButton">
+          <i class="fas fa-bars myIcon"></i>
+        </button>
+        <div class="left-side text-center">
+          <ul>
+            <li>
+              <img src="css/images/logo.png" alt="" srcset="" />
+            </li>
+            <li>
+              <i class="fas fa-tachometer-alt"></i> <br />
+              dashboard
+            </li>
+            <li>
+              <i class="far fa-calendar-check"></i> <br />
+              appointment
+            </li>
+            <li>
+              <i class="fas fa-stethoscope"></i> <br />
+              doctors
+            </li>
+            <li>
+              <i class="fas fa-user-injured"></i> <br />
+              patients
+            </li>
+            <li>
+              <i class="fas fa-capsules"></i> <br />
+              pharmacy
+            </li>
+            <li>
+              <i class="fas fa-users"></i> <br />
+              departments
+            </li>
+            <li>
+              <i class="fas fa-money-check-alt"></i> <br />
+              payments
+            </li>
+            <li>
+              <i class="fas fa-medkit"></i> <br />
+              services
+            </li>
+            <li>
+              <i class="fas fa-user"></i> <br />
+              users
+            </li>
+          </ul>
+        </div>
+        <div class="right-side">
+          <div class="container-fluid">
+            <div class="myNav">
+              <div class="leftNav">
+                <ul class="list-unstyled d-flex">
+                  <li>
+                    <form action="">
+                      <input
+                        type="search"
+                        name=""
+                        id=""
+                        placeholder="search patient"
+                        class=""
+                      />
+                    </form>
+                  </li>
+                  <li class="add-patient">
+                    <span class="primary-color">add patient</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="rightNav">
+                <div class="profile d-flex">
+                  <div class="userImage">
+                    <img src="css/images/logo.PNG" alt="" srcset="" />
+                  </div>
+                  <div class="userName">name</div>
+                </div>
+              </div>
+            </div>
+            <div class="intro">
+              <div class="container">
+                <div class="row">
+                  <div class="col-3 boot">
+                    <div class="selects">
+                      <div class="select first-select">
+                        <select class="selectpicker" title="select speciality">
+                          <option>first</option>
+                          <option>second</option>
+                          <option>third</option>
+                        </select>
+                      </div>
+                      <div class="select second-select">
+                        <select class="selectpicker" title="select doctor">
+                          <option>first</option>
+                          <option>second</option>
+                          <option>third</option>
+                        </select>
+                      </div>
+                      <div class="select third-select">
+                        <select class="selectpicker" title="select service">
+                          <option>first</option>
+                          <option>second</option>
+                          <option>third</option>
+                        </select>
+                      </div>
+                      <div class="select third-select">
+                        <div class="myDate selectpicker">
+                          <input
+                            placeholder="Select your date"
+                            type="text"
+                            name="checkIn"
+                            id="datepicker"
+                            value=""
+                            class="calendar"
+                          /><i class="fas fa-calendar-check icon"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="shifts">
+                      <div class="row">
+                        <div class="col-6">
+                          <ul class="list-unstyled">
+                            <li class="main-color morning-title">
+                              <span>morning shift</span>
+                              <i class="far fa-moon"></i>
+                            </li>
+                            <li class="main-color">
+                              <span>10:00 - 10:30 Am</span>
+                              <i class="fas fa-sun"></i>
+                            </li>
+                            <li class="second-color">
+                              <span>11:00 - 11:30 Am</span>
+                              <i class="fas fa-sun"></i>
+                            </li>
+                            <li class="main-color">
+                              <span>12:00 - 12:30 Pm</span>
+                              <i class="fas fa-sun"></i>
+                            </li>
+                            <li class="second-color">
+                              <span>01:00 - 01:30 Pm</span>
+                              <i class="fas fa-sun"></i>
+                            </li>
+                            <li class="main-color">
+                              <span>02:00 - 02:30 Pm</span>
+                              <i class="fas fa-sun"></i>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-6">
+                          <ul class="list-unstyled">
+                            <li class="evening-title">
+                              <span>evening shift</span>
+                              <i class="far fa-moon"></i>
+                            </li>
+                            <li class="main-color">
+                              <span>10:30 - 11:00 Am</span>
+                              <i class="fas fa-sun"></i>
+                            </li>
+                            <li class="second-color">
+                              <span>11:30 - 12:00 Pm</span>
+                              <i class="fas fa-sun"></i>
+                            </li>
+                            <li class="main-color">
+                              <span>12:30 - 01:00 Pm</span>
+                              <i class="fas fa-sun"></i>
+                            </li>
+                            <li class="main-color">
+                              <span>01:30 - 02:00 Pm</span>
+                              <i class="fas fa-sun"></i>
+                            </li>
+                            <li class="main-color">
+                              <span>02:30 - 03:00 Pm</span>
+                              <i class="fas fa-sun"></i>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-9">
+                    <div class="doctors-info">
+                      <div class="appointments">
+                        <h1 class="text-left">Appointments</h1>
+                        <div class="page-sort">
+                          <div class="pagination">
+                            <span class="upcoming">upcoming</span>
+                            <span class="past">past</span>
+                            <span class="left-arc">
+                              <i class="fas fa-chevron-circle-left"></i>
+                            </span>
+                            <span class="right-arc">
+                              <i class="fas fa-chevron-circle-right"></i>
+                            </span>
+                          </div>
+                          <div class="sort d-flex">
+                            <div class="first-sort">
+                              <span>sort by</span>
+                              <select class="mr-4">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                              </select>
+                            </div>
+                            <div class="second-sort">
+                              <span>sort by</span>
+                              <select class="">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="doctos-details">
+                        <ul class="list-unstyled d-flex">
+                          <li>
+                            <div class="media">
+                              <img
+                                src="./css/images/doctor.webp"
+                                class="mr-2 doctor-img"
+                                alt="..."
+                              />
+                              <div class="media-body">
+                                <h5 class="mt-0 doc-name">dr ahmed qenawy</h5>
+                                <p class="doc-clinic">plastic clinic</p>
+                              </div>
+                            </div>
+                            <div class="doc-department">
+                              <span>
+                                <i class="fas fa-briefcase-medical"></i>
+                                <span class="doc-part">mediacl surgery</span>
+                              </span>
+                              
+                            </div>
+                            <div class="date">
+                              <i class="far fa-calendar-alt"></i>
+                              <span class="date">9/2/2020</span>
+                              <span class="time">10:00 - 10:30 Am</span>
+                            </div>
+                            <div class="buttons">
+                              <span class="confirm">
+                                <i class="far fa-check-circle"></i>
+                                confirm
+                              </span>
+                              <span class="cancel">
+                                <i class="far fa-times-circle"></i>
+                                cancel
+                              </span>
+                            </div>
+                            <div class="location">
+                              <i class="fas fa-map-marker-alt"></i>
+                              <span class="doc-location">maadi , medical center , cairo</span>
+                              <img
+                                src="css/images/aef04554eb0fb4bd55f59cd5be2d6463.png"
+                                alt=""
+                                srcset=""
+                              />
+                            </div>
+                          </li>
+                          <li>
+                            <div class="media">
+                              <img
+                                src="./css/images/doctor.webp"
+                                class="mr-2 doctor-img"
+                                alt="..."
+                              />
+                              <div class="media-body">
+                                <h5 class="mt-0 doc-name">dr ahmed qenawy</h5>
+                                <p class="doc-clinic">plastic clinic</p>
+                              </div>
+                            </div>
+                            <div class="doc-department">
+                              <span>
+                                <i class="fas fa-briefcase-medical"></i>
+                                <span class="doc-part">mediacl surgery</span>
+                              </span>
+                              
+                            </div>
+                            <div class="date">
+                              <i class="far fa-calendar-alt"></i>
+                              <span class="date">9/2/2020</span>
+                              <span class="time">10:00 - 10:30 Am</span>
+                            </div>
+                                                      <div class="buttons">
+                              <span class="confirm">
+                                <i class="far fa-check-circle"></i>
+                                confirm
+                              </span>
+                              <span class="cancel">
+                                <i class="far fa-times-circle"></i>
+                                cancel
+                              </span>
+                            </div>
+                            <div class="location">
+                              <i class="fas fa-map-marker-alt"></i>
+                              <span class="doc-location">maadi , medical center , cairo</span>
+                              <img
+                                src="css/images/aef04554eb0fb4bd55f59cd5be2d6463.png"
+                                alt=""
+                                srcset=""
+                              />
+                            </div>
+                          </li>
+                          <li>
+                            <div class="media">
+                              <img
+                                src="./css/images/doctor.webp"
+                                class="mr-2 doctor-img"
+                                alt="..."
+                              />
+                              <div class="media-body">
+                                <h5 class="mt-0 doc-name">dr ahmed qenawy</h5>
+                                <p class="doc-clinic">plastic clinic</p>
+                              </div>
+                            </div>
+                            <div class="doc-department">
+                              <span>
+                                <i class="fas fa-briefcase-medical"></i>
+                                <span class="doc-part">mediacl surgery</span>
+                              </span>
+                              
+                            </div>
+                            <div class="date">
+                              <i class="far fa-calendar-alt"></i>
+                              <span class="date">9/2/2020</span>
+                              <span class="time">10:00 - 10:30 Am</span>
+                            </div>
+                                                      <div class="buttons">
+                              <span class="confirm">
+                                <i class="far fa-check-circle"></i>
+                                confirm
+                              </span>
+                              <span class="cancel">
+                                <i class="far fa-times-circle"></i>
+                                cancel
+                              </span>
+                            </div>
+                            <div class="location">
+                              <i class="fas fa-map-marker-alt"></i>
+                              <span class="doc-location">maadi , medical center , cairo</span>
+                              <img
+                                src="css/images/aef04554eb0fb4bd55f59cd5be2d6463.png"
+                                alt=""
+                                srcset=""
+                              />
+                            </div>
+                          </li>
+                          <li>
+                            <div class="media">
+                              <img
+                                src="./css/images/doctor.webp"
+                                class="mr-2 doctor-img"
+                                alt="..."
+                              />
+                              <div class="media-body">
+                                <h5 class="mt-0 doc-name">dr ahmed qenawy</h5>
+                                <p class="doc-clinic">plastic clinic</p>
+                              </div>
+                            </div>
+                            <div class="doc-department">
+                              <span>
+                                <i class="fas fa-briefcase-medical"></i>
+                                <span class="doc-part">mediacl surgery</span>
+                              </span>
+                              
+                            </div>
+                            <div class="date">
+                              <i class="far fa-calendar-alt"></i>
+                              <span class="date">9/2/2020</span>
+                              <span class="time">10:00 - 10:30 Am</span>
+                            </div>
+                                                      <div class="buttons">
+                              <span class="confirm">
+                                <i class="far fa-check-circle"></i>
+                                confirm
+                              </span>
+                              <span class="cancel">
+                                <i class="far fa-times-circle"></i>
+                                cancel
+                              </span>
+                            </div>
+                            <div class="location">
+                              <i class="fas fa-map-marker-alt"></i>
+                              <span class="doc-location">maadi , medical center , cairo</span>
+                              <img
+                                src="css/images/aef04554eb0fb4bd55f59cd5be2d6463.png"
+                                alt=""
+                                srcset=""
+                              />
+                            </div>
+                          </li>
+                          <li>
+                            <div class="media">
+                              <img
+                                src="./css/images/doctor.webp"
+                                class="mr-2 doctor-img"
+                                alt="..."
+                              />
+                              <div class="media-body">
+                                <h5 class="mt-0 doc-name">dr ahmed qenawy</h5>
+                                <p class="doc-clinic">plastic clinic</p>
+                              </div>
+                            </div>
+                            <div class="doc-department">
+                              <span>
+                                <i class="fas fa-briefcase-medical"></i>
+                                <span class="doc-part">mediacl surgery</span>
+                              </span>
+                              
+                            </div>
+                            <div class="date">
+                              <i class="far fa-calendar-alt"></i>
+                              <span class="date">9/2/2020</span>
+                              <span class="time">10:00 - 10:30 Am</span>
+                            </div>
+                                                      <div class="buttons">
+                              <span class="confirm">
+                                <i class="far fa-check-circle"></i>
+                                confirm
+                              </span>
+                              <span class="cancel">
+                                <i class="far fa-times-circle"></i>
+                                cancel
+                              </span>
+                            </div>
+                            <div class="location">
+                              <i class="fas fa-map-marker-alt"></i>
+                              <span class="doc-location">maadi , medical center , cairo</span>
+                              <img
+                                src="css/images/aef04554eb0fb4bd55f59cd5be2d6463.png"
+                                alt=""
+                                srcset=""
+                              />
+                            </div>
+                          </li>
+                          <li>
+                            <div class="media">
+                              <img
+                                src="./css/images/doctor.webp"
+                                class="mr-2 doctor-img"
+                                alt="..."
+                              />
+                              <div class="media-body">
+                                <h5 class="mt-0 doc-name">dr ahmed qenawy</h5>
+                                <p class="doc-clinic">plastic clinic</p>
+                              </div>
+                            </div>
+                            <div class="doc-department">
+                              <span>
+                                <i class="fas fa-briefcase-medical"></i>
+                                <span class="doc-part">mediacl surgery</span>
+                              </span>
+                              
+                            </div>
+                            <div class="date">
+                              <i class="far fa-calendar-alt"></i>
+                              <span class="date">9/2/2020</span>
+                              <span class="time">10:00 - 10:30 Am</span>
+                            </div>
+                                                      <div class="buttons">
+                              <span class="confirm">
+                                <i class="far fa-check-circle"></i>
+                                confirm
+                              </span>
+                              <span class="cancel">
+                                <i class="far fa-times-circle"></i>
+                                cancel
+                              </span>
+                            </div>
+                            <div class="location">
+                              <i class="fas fa-map-marker-alt"></i>
+                              <span class="doc-location">maadi , medical center , cairo</span>
+                              <img
+                                src="css/images/aef04554eb0fb4bd55f59cd5be2d6463.png"
+                                alt=""
+                                srcset=""
+                              />
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="cost-notification-visit">
+                      <div class="row">
+                        <div class="col-md-4 col-xs-1">
+                          <div class="cost">
+                            <h5 class="cost-title">total cost</h5>
+                            <h5 class="eg">2500eg</h5>
+                            <div class="doctors-cost">
+                              <ul class="doctors list-unstyled">
+                                <li><i class="far fa-caret-square-right"></i> dr: ahmed qenawy</li>
+                                <li><i class="far fa-caret-square-right"></i> dr: mohamed qenawy</li>
+                              </ul>
+                              <ul class="doctor-price list-unstyled">
+                                <li>1500</li>
+                                <li>1000</li>
+                              </ul>
+                              <button class="btn btn-primary btn-block" type="button">proceed to checkout</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-xs-1">
+                         <div class="notification">
+                          <h5 class="mb-3">notifications</h5>
+                          <div class="doctors-cost">
+                            <div class="visits-number">
+                              you have 2 visits today:
+                            </div>
+                            <ul class="doctors list-unstyled">
+                              <li><i class="far fa-caret-square-right"></i> dr: ahmed qenawy</li>
+                              <li><i class="far fa-caret-square-right"></i> dr: mohamed qenawy</li>
+                            </ul>
+                            <ul class="doctor-price list-unstyled">
+                              <li>pastic surgery</li>
+                              <li>medical consultant</li>
+                            </ul>
+                          </div>
+                         </div>
+                        </div>
+                        <div class="col-md-4 col-xs-1">
+                          <div class="visit">
+                            <h5 class="mb-3">visit</h5>
+                            <div class="doctors-cost">
+                              <div class="visits-number">
+                                you have 2 visits today:
+                              </div>
+                              <ul class="doctors list-unstyled">
+                                <li><i class="far fa-caret-square-right"></i> dr: ahmed qenawy</li>
+                                <li><i class="far fa-caret-square-right"></i> dr: mohamed qenawy</li>
+                              </ul>
+                              <ul class="doctor-price list-unstyled">
+                                <li>1500</li>
+                                <li>1000</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+
+    <!-- (Optional) Latest compiled and minified JavaScript translation files -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/i18n/defaults-*.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/plugin.js"></script>
+  </body>
+</html>

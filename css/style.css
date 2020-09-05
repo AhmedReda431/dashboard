@@ -1,0 +1,579 @@
+/* Style for body and footer codepen :)  
+Designed by RuLiweb - ruliweb.it */
+.class-link {
+  color: #333333;
+  text-decoration: none;
+}
+
+.class-link:hover {
+  color: #ffbb00;
+}
+
+/* From here you can start to copy */
+.calendar {
+  padding: 8px 0 8px 13px;
+  background: #ffffff;
+  border-radius: 4px;
+  font-size: 16px;
+  border: 1px solid #333;
+  border-radius: 20px;
+  width: 100%;
+  text-transform: lowercase;
+  outline: none;
+}
+
+.ui-datepicker {
+  background: #ffffff;
+  border-radius: 15px;
+}
+
+.ui-datepicker-header {
+  height: 50px;
+  line-height: 50px;
+  background-color: #ffffff;
+  color: #31639c;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #31639c;
+  border-radius: 15px;
+}
+
+.ui-datepicker-prev,
+.ui-datepicker-next {
+  width: 20px;
+  height: 20px;
+  text-indent: 9999px;
+  border-radius: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  margin-top: 12px;
+}
+
+.ui-datepicker-prev {
+  float: left;
+  margin-left: 12px;
+}
+
+.ui-datepicker-prev:after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin: -43px 0px 0px 8px;
+}
+
+.ui-datepicker-next {
+  float: right;
+  margin-right: 12px;
+}
+
+.ui-datepicker-next:after {
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  margin: -43px 0px 0px 6px;
+}
+
+.ui-datepicker-prev:after,
+.ui-datepicker-next:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-left: 2px solid #31639c;
+  border-bottom: 2px solid #31639c;
+}
+
+.ui-datepicker-prev:hover,
+.ui-datepicker-next:hover,
+.ui-datepicker-prev:hover:after,
+.ui-datepicker-next:hover:after {
+  border-color: #333333;
+}
+
+.ui-datepicker-title {
+  text-align: center;
+  font-size: 20px;
+}
+
+.ui-datepicker-calendar {
+  width: 100%;
+  text-align: center;
+}
+
+.ui-datepicker-calendar thead tr th span {
+  display: block;
+  width: 40px;
+  color: #31639c;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.ui-state-default {
+  display: block;
+  text-decoration: none;
+  color: #333333;
+  line-height: 40px;
+  font-size: 16px;
+}
+
+.ui-state-default:hover {
+  color: #ffffff;
+  background: #31639c;
+  border-radius: 50px;
+  -webkit-transition: all 0.25s cubic-bezier(0.7, -0.12, 0.2, 1.12);
+  transition: all 0.25s cubic-bezier(0.7, -0.12, 0.2, 1.12);
+}
+
+.ui-state-highlight {
+  color: #ffffff;
+  background-color: #31639c;
+  border-radius: 50px;
+}
+
+.ui-state-active {
+  color: #ffffff;
+  background-color: #31639c;
+  border-radius: 50px;
+}
+
+.ui-datepicker-unselectable .ui-state-default {
+  color: #eee;
+  border: 2px solid transparent;
+}
+
+.icon {
+  margin-left: -30px;
+  margin-top: -26px;
+  position: relative;
+  color: #31639c;
+  font-size: 20px;
+}
+
+main .main-holder .sideButton {
+  position: fixed;
+  border: 1px solid;
+  top: 17px;
+  left: 1px;
+  z-index: 9;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+main .main-holder .left-side {
+  width: 111px;
+  -webkit-box-shadow: 2px 0 5px 0px #dddada;
+          box-shadow: 2px 0 5px 0px #dddada;
+  left: -200px;
+  top: 0;
+  bottom: 0;
+  padding-top: 5px;
+  -webkit-transition: left 0.3s ease-in-out;
+  transition: left 0.3s ease-in-out;
+  border-radius: 0 0 35px 0;
+  position: fixed;
+  overflow: hidden;
+}
+
+main .main-holder .left-side ul {
+  list-style: none;
+  padding: 10px;
+  padding-bottom: 0;
+}
+
+main .main-holder .left-side ul li {
+  border-radius: 5px;
+  margin: 14px 0 37px 0;
+  line-height: 1;
+  font-size: 15px;
+}
+
+main .main-holder .left-side.active {
+  left: 0;
+}
+
+main .main-holder .right-side {
+  max-width: 100%;
+  z-index: 5555555555;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  -webkit-transition: left 0.3s ease-in-out;
+  transition: left 0.3s ease-in-out;
+  background-color: #e7e7e7;
+  z-index: 2;
+}
+
+main .main-holder .right-side .container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+main .main-holder .right-side .container-fluid .myNav {
+  background-color: #fff;
+  padding: 18px 7%;
+  line-height: 1;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+main .main-holder .right-side .container-fluid .myNav * {
+  line-height: 34px;
+}
+
+main .main-holder .right-side .container-fluid .myNav .leftNav {
+  display: inline-block;
+}
+
+main .main-holder .right-side .container-fluid .myNav .leftNav ul {
+  margin: 0;
+  line-height: 1;
+}
+
+main .main-holder .right-side .container-fluid .myNav .leftNav ul form input {
+  background-color: #bcb9cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 7px 20px;
+  line-height: 1;
+  margin-right: 30px;
+  border-radius: 20px;
+}
+
+main .main-holder .right-side .container-fluid .myNav .leftNav ul form input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+main .main-holder .right-side .container-fluid .myNav .leftNav ul form input:-ms-input-placeholder {
+  color: #fff;
+}
+
+main .main-holder .right-side .container-fluid .myNav .leftNav ul form input::-ms-input-placeholder {
+  color: #fff;
+}
+
+main .main-holder .right-side .container-fluid .myNav .leftNav ul form input::placeholder {
+  color: #fff;
+}
+
+main .main-holder .right-side .container-fluid .myNav .leftNav ul form input:focus {
+  outline: none;
+  border: none;
+}
+
+main .main-holder .right-side .container-fluid .myNav .leftNav ul .add-patient {
+  background-color: #21cfac;
+  color: #fff;
+  padding: 0px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+main .main-holder .right-side .container-fluid .myNav .rightNav {
+  float: right;
+}
+
+main .main-holder .right-side .container-fluid .myNav .rightNav .profile .userImage {
+  height: 100%;
+  border-radius: 50%;
+  padding-top: -42px;
+  top: 0;
+  margin-top: -8px;
+  margin-right: 17px;
+}
+
+main .main-holder .right-side .container-fluid .myNav .rightNav .profile .userImage img {
+  height: inherit;
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+main .main-holder .right-side .container-fluid .intro .container {
+  overflow: hidden;
+}
+
+main .main-holder .right-side .container-fluid .intro .selects {
+  padding: 10% 0 5%;
+  line-height: 1;
+}
+
+main .main-holder .right-side .container-fluid .intro .selects .select {
+  margin-bottom: 15px;
+}
+
+main .main-holder .right-side .container-fluid .intro .selects .select .myDate {
+  width: 100%;
+}
+
+main .main-holder .right-side .container-fluid .intro .selects .select .myDate form input {
+  width: 100%;
+}
+
+main .main-holder .right-side .container-fluid .intro .selects .dropdown-toggle::after {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+main .main-holder .right-side .container-fluid .intro .selects .bootstrap-select > .dropdown-toggle.bs-placeholder,
+main .main-holder .right-side .container-fluid .intro .selects .bootstrap-select > .dropdown-toggle.bs-placeholder:active,
+main .main-holder .right-side .container-fluid .intro .selects .bootstrap-select > .dropdown-toggle.bs-placeholder:focus,
+main .main-holder .right-side .container-fluid .intro .selects .bootstrap-select > .dropdown-toggle.bs-placeholder:hover,
+main .main-holder .right-side .container-fluid .intro .selects .bootstrap-select > .dropdown-toggle,
+main .main-holder .right-side .container-fluid .intro .selects .btn-light:not(:disabled):not(.disabled).active:focus,
+main .main-holder .right-side .container-fluid .intro .selects .btn-light:not(:disabled):not(.disabled):active:focus,
+main .main-holder .right-side .container-fluid .intro .selects .show > .btn-light.dropdown-toggle:focus,
+main .main-holder .right-side .container-fluid .intro .selects .bootstrap-select > .dropdown-toggle,
+main .main-holder .right-side .container-fluid .intro .selects .bootstrap-select .dropdown-toggle:focus,
+main .main-holder .right-side .container-fluid .intro .selects .bootstrap-select > select.mobile-device:focus + .dropdown-toggle {
+  width: 100%;
+  border-radius: 20px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #333;
+  outline: none !important;
+}
+
+main .main-holder .right-side .container-fluid .intro .selects .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+  width: 100%;
+}
+
+main .main-holder .right-side .container-fluid .intro .shifts .row .col-6 {
+  margin: 0;
+  padding: 15px 5px;
+}
+
+main .main-holder .right-side .container-fluid .intro .shifts .row ul {
+  color: #fff;
+}
+
+main .main-holder .right-side .container-fluid .intro .shifts .row ul li {
+  position: relative;
+  padding: 8px 15px;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  margin: 20px 0;
+}
+
+main .main-holder .right-side .container-fluid .intro .shifts .row ul li span {
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+main .main-holder .right-side .container-fluid .intro .shifts .row ul li i {
+  position: absolute;
+  top: 13px;
+  right: 7px;
+}
+
+main .main-holder .right-side .container-fluid .intro .shifts .row ul .evening-title {
+  background-color: #fff;
+  border: 1px solid #333;
+  color: #333;
+}
+
+main .main-holder .right-side .container-fluid .intro .shifts .row ul .evening-title span {
+  font-size: 15px;
+  margin-right: 30px;
+}
+
+main .main-holder .right-side .container-fluid .intro .shifts .row ul .main-color {
+  background-color: #21cfac;
+}
+
+main .main-holder .right-side .container-fluid .intro .shifts .row ul .second-color {
+  background-color: #e68e9c;
+}
+
+main .main-holder .right-side.side {
+  left: 111px;
+}
+
+main .main-holder .right-side.side .myNav {
+  padding: 18px 7% 18px 3%;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+main .main-holder .doctors-info {
+  margin-top: 30px;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+main .main-holder .doctors-info .page-sort {
+  padding: 20px;
+}
+
+main .main-holder .doctors-info .page-sort .pagination {
+  display: inline-block;
+}
+
+main .main-holder .doctors-info .page-sort .pagination .upcoming {
+  background-color: #224276;
+  color: #fff;
+  padding: 5px 12px 8px;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+main .main-holder .doctors-info .page-sort .pagination .past {
+  background-color: #EFEFF7;
+  color: #224276;
+  padding: 5px 20px 8px;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+main .main-holder .doctors-info .page-sort .pagination .left-arc,
+main .main-holder .doctors-info .page-sort .pagination .right-arc {
+  color: #224276;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+main .main-holder .doctors-info .page-sort .sort {
+  float: right;
+}
+
+main .main-holder .doctors-info .page-sort .sort select {
+  border: none;
+  color: #224276;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+main .main-holder .doctors-info .page-sort .sort select:focus {
+  border: none;
+  outline: none;
+}
+
+main .main-holder .doctors-info .page-sort .sort select option {
+  cursor: pointer;
+}
+
+main .main-holder .doctors-info .doctos-details ul {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 100%;
+  text-transform: capitalize;
+  padding: 20px;
+}
+
+main .main-holder .doctors-info .doctos-details ul li {
+  -webkit-box-shadow: 0px 0px 5px 4px #efefef;
+          box-shadow: 0px 0px 5px 4px #efefef;
+  border-radius: 20px;
+  margin-right: 20px;
+  padding: 15px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+main .main-holder .doctors-info .doctos-details ul li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+main .main-holder .doctors-info .doctos-details ul li img.doctor-img {
+  width: 77px;
+}
+
+main .main-holder .doctors-info .doctos-details ul li .media .media-body {
+  padding-top: 7px;
+}
+
+main .main-holder .doctors-info .doctos-details ul li .media .media-body h5 {
+  font-size: 16px;
+}
+
+main .main-holder .doctors-info .doctos-details ul li > div {
+  margin-bottom: 15px;
+}
+
+main .main-holder .doctors-info .doctos-details ul li .location img {
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+main .main-holder .doctors-info .doctos-details ul li .date .time,
+main .main-holder .doctors-info .doctos-details ul li .buttons .cancel {
+  float: right;
+}
+
+main .main-holder .doctors-info .doctos-details ul li .buttons > span {
+  background-color: #dddddda6;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+main .main-holder .doctors-info .doctos-details ul li .buttons .confirm {
+  color: #21cfac;
+}
+
+main .main-holder .doctors-info .doctos-details ul li .buttons .cancel {
+  color: #e68e9c;
+}
+
+main .main-holder .cost-notification-visit {
+  margin: 20px 0;
+  border-radius: 20px;
+  text-transform: capitalize;
+  font-size: 13px;
+}
+
+main .main-holder .cost-notification-visit .row .col-md-4 {
+  padding: 10px;
+}
+
+main .main-holder .cost-notification-visit .row .doctors-cost .doctors {
+  display: inline-block;
+}
+
+main .main-holder .cost-notification-visit .row .doctors-cost .doctor-price {
+  float: right;
+}
+
+main .main-holder .cost-notification-visit .row .visits-number {
+  margin-bottom: 25px;
+}
+
+main .main-holder .cost-notification-visit .row button {
+  border-radius: 20px;
+  background-color: #224170;
+}
+
+main .main-holder .cost-notification-visit .row .cost {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+main .main-holder .cost-notification-visit .row .cost h5 {
+  display: inline-block;
+}
+
+main .main-holder .cost-notification-visit .row .cost h5:last-of-type {
+  float: right;
+}
+
+main .main-holder .cost-notification-visit .row .notification {
+  background-color: #21cfac;
+  padding: 20px;
+  padding-bottom: 7px;
+  border-radius: 20px;
+  color: #fff;
+}
+
+main .main-holder .cost-notification-visit .row .visit {
+  background-color: #e68e9c;
+  padding: 20px;
+  border-radius: 20px;
+  color: #fff;
+  padding-bottom: 7px;
+}
+/*# sourceMappingURL=style.css.map */
